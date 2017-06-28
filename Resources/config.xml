@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../engine/Shopware/Components/Plugin/schema/config.xsd">
+
+    <elements>
+
+        <element type="boolean" required="true" scope="shop">
+            <name>active</name>
+            <label lang="de">Aktiv</label>
+            <label lang="en">Active</label>
+            <value>true</value>
+        </element>
+
+        <element required="true" type="select" scope="shop">
+            <name>amount</name>
+            <label lang="de">Per Page</label>
+            <label lang="en">Per Page</label>
+            <description lang="de">Count of custom models per page.</description>
+            <description lang="en">Count of custom models per page.</description>
+            <store>
+                <option>
+                    <value>5</value>
+                    <label lang="de">Five</label>
+                    <label lang="en">Five</label>
+                </option>
+                <option>
+                    <value>10</value>
+                    <label lang="de">Ten</label>
+                    <label lang="en">Ten</label>
+                </option>
+            </store>
+        </element>
+
+    </elements>
+
+</config>
